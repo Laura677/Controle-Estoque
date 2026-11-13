@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Controle de estoque</title><link rel="stylesheet" href="/style.css"><script src="/script.js" defer></script></head>
+<body><main>
+<h1>Controle de estoque</h1><p id="mensagem" role="status"></p>
+<h2>Fornecedores</h2>
+<form id="form-fornecedor">
+<input name="id" type="hidden">
+<label>CNPJ<input name="cnpj" required></label><button id="consultar-cnpj" type="button">Consultar CNPJ</button><p id="consulta" role="status"></p>
+<label>Razão social<input name="razaoSocial" required></label><label>Nome fantasia<input name="nomeFantasia" required></label>
+<label>Telefone<input name="telefone" type="tel" required></label><label>E-mail<input name="email" type="email" required></label><label>Endereço<input name="endereco" required></label>
+<button type="submit">Salvar fornecedor</button><button type="reset">Limpar</button>
+</form>
+<div class="tabela"><table><thead><tr><th>Empresa</th><th>CNPJ</th><th>Contato</th><th>Endereço</th><th>Ações</th></tr></thead><tbody id="fornecedores"></tbody></table></div>
+<h2>Produtos</h2>
+<form id="form-produto"><input name="id" type="hidden">
+<label>Nome<input name="nome" required></label><label>Código<input name="codigo" required></label><label>Categoria<input name="categoria" required></label><label>Descrição<input name="descricao" required></label>
+<label>Preço unitário<input name="preco" type="number" min="0" step="0.01" required></label><label>Quantidade<input name="quantidade" type="number" min="0" step="1" required></label><label>Fornecedor<select name="fornecedorId" required></select></label>
+<button type="submit">Salvar produto</button><button type="reset">Limpar</button>
+</form>
+<div class="filtros"><label>Pesquisar por nome<input id="pesquisa" type="search"></label><label>Categoria<select id="categoria"><option value="">Todas</option></select></label></div>
+<p id="valor-total"></p><div class="tabela"><table><thead><tr><th>Produto</th><th>Código</th><th>Categoria</th><th>Preço</th><th>Quantidade</th><th>Fornecedor</th><th>Ações</th></tr></thead><tbody id="produtos"></tbody></table></div>
+<h2>Consulta do registro</h2><pre id="detalhes">Clique em Consultar em uma das listagens.</pre>
+</main></body></html>

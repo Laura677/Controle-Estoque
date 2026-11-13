@@ -1,0 +1,12 @@
+{
+  "name": "controle-estoque",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Controle de estoque com API REST em Node.js sem frameworks",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

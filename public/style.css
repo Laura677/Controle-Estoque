@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f3f3f3; color: #222; }
+main { max-width: 1100px; margin: auto; padding: 20px; }
+h1, h2 { color: #224b68; }
+form { background: white; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; }
+label { display: block; margin: 10px 0; }
+input, select { display: block; padding: 8px; width: 100%; margin-top: 5px; border: 1px solid #aaa; }
+button { padding: 8px 12px; margin: 4px; background: #224b68; color: white; border: 0; cursor: pointer; }
+.tabela { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; background: white; margin-bottom: 25px; }
+th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+th { background: #dde7ee; }
+.baixo, .cancelada { background: #ffe5c4; }
+.ativa { background: #d4efda; }
+#mensagem { font-weight: bold; }
+pre { background: white; padding: 15px; white-space: pre-wrap; overflow-wrap: anywhere; }

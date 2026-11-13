@@ -1,8 +1,8 @@
 # Controle de estoque — CRUD + API
 
 Nome: Laura Cristini da Silva
+RA: 2171392511014
 
-Node.js, NPM, HTML, CSS e JavaScript, sem frameworks ou dependências externas. Requer Node.js 22 ou superior.
 
 ## Instalação e execução
 
